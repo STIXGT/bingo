@@ -5,11 +5,10 @@ import java.util.Random;
 public abstract class Bingo {
 
 	private int numeroBolas;
-	private Tablero tablero;
+
 
 	public Bingo(int numeroBolas) {
 		this.numeroBolas = numeroBolas;
-		setTablero(new Tablero());
 	}
 
 	public Bola sacarBola() {
@@ -27,13 +26,4 @@ public abstract class Bingo {
 	public void setNumeroBolas(int numeroBolas) {
 		this.numeroBolas = numeroBolas;
 	}
-
-	public Tablero getTablero() {
-		return tablero;
-	}
-
-	public void setTablero(Tablero tablero) {
-		this.tablero = tablero;
-	}
-
 }

@@ -4,8 +4,11 @@ import java.io.IOException;
 
 public class Bingo90 extends Bingo {
 
+	private Tablero90 tablero90;
+
 	public Bingo90() {
 		super(90);
+		setTablero(new Tablero90());
 	}
 
 	@Override
@@ -25,7 +28,14 @@ public class Bingo90 extends Bingo {
 			}
 			getTablero().imprimirTablero(bola);
 		}
+	}
 
+	public Tablero90 getTablero() {
+		return tablero90;
+	}
+
+	public void setTablero(Tablero90 tablero90) {
+		this.tablero90 = tablero90;
 	}
 
 }
